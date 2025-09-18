@@ -29,3 +29,28 @@ Users can browse, add, update, and delete recipes while enjoying a responsive an
    ```bash
    git clone https://github.com/username/repository.git
    cd repository
+Install and run the backend:
+
+bash
+Copy code
+cd backend
+npm install
+npm start
+Install and run the frontend:
+
+bash
+Copy code
+cd frontend
+npm install
+ng serve
+Open the app at: http://localhost:4200
+
+📚 Project Goals
+
+Develop a full-stack recipe management system.
+
+Implement a clean layered architecture with Dependency Injection.
+
+Build smart, reusable UI components for a responsive and user-friendly interface.
+
+Learn integration of Angular frontend with Node.js/MongoDB backend.
