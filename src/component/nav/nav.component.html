@@ -1,0 +1,50 @@
+<nav>
+    <ul class="nav">
+        <li><a routerLink="AllRecipy" >AllRecipy</a></li>
+       
+        <li><a routerLink="Sing-In" >Sing-In</a></li>
+        <li><a routerLink="Sign-Up" >Sign-Up</a></li>
+        @if(user_s.thisUser.username!=null)
+        
+        {
+            <li><a routerLink="AddRecipy" >AddRecipy</a></li>
+
+        } 
+    </ul>
+    
+</nav>
+<h2>{{user_s.thisUser.username}}</h2>
+<style>
+    .nav {
+        display: flex;
+        justify-content: center;
+        background: #121212;
+        padding: 20px;
+        list-style: none;
+        box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.8);
+    }
+    .nav li {
+        margin: 0 15px;
+    }
+    .nav li a {
+        color: #FFD700;
+        text-decoration: none;
+        font-size: 24px;
+        font-family: 'Papyrus', sans-serif;
+        padding: 10px 20px;
+        border-radius: 12px;
+        transition: background 0.3s ease, color 0.3s ease;
+    }
+    .nav li a:hover {
+        background: #d4af37;
+        color: #121212;
+        border-radius: 12px;
+    }
+    body {
+            background-color: #000000;  /* רקע שחור */
+            color: white;               /* צבע טקסט לבן */
+            font-family: 'Papyrus', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+</style>
